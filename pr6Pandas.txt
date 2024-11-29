@@ -1,0 +1,25 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv("data.csv")
+print(df.head())
+
+print("Checking missing values ")
+missing_val = df.isnull().sum()
+print(missing_val)
+#df.dropna(inplace=True)
+df.fillna( df['age'].mean() , inplace=True)
+print(f"After droping missing values {df.isnull().sum()}")
+
+df.drop_duplicates(inplace=True)
+
+print(df.describe())
+
+# df['grade'].hist()
+plt.hist(df['grade'] , bins=15 , edgecolor='black')
+plt.grid()
+plt.title("graph of transaction")
+plt.xlabel("rate")
+plt.ylabel("growth")
+# plt.show()

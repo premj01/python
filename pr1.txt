@@ -1,0 +1,36 @@
+int_var = 24
+float_var = 24.25
+str_var = "this is prem"
+list_l = [1,2,3,4,5]
+touple_t = (6,7,8,9)
+dict_d = {"name" : "Prem" , "roll" : 216124}
+set_s = {1,2,3,4}
+flag = True
+
+print(f"Sum :{int_var + float_var}")
+print(f"Diff :{int_var - float_var}")
+print(f"Mul :{int_var * float_var}")
+print(f"Div :{int_var / float_var}")
+
+str_var = str_var + " Nice to meet you"
+print(str_var)
+
+list_l.append(6)
+print(list_l)
+print(list_l[3])
+
+touple_pack = (int_var ,float_var , str_var )
+num,deci,sentence = touple_pack
+print(num)
+print(deci)
+print(sentence)
+
+dict_d['name'] = "Om"
+print(dict_d)
+print(dict_d['name'])
+
+set_s.add(50)
+set_s.add(4)
+print(set_s)
+
+print(flag and (1 == 1))

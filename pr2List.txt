@@ -1,0 +1,12 @@
+name = ["prem", "om" , "jay", "prasad" , "nikhil"]
+scores = [91.18 , 35 , 25 , 91.16 , 91.46]
+
+print(f"Minimum marks: {min(scores)}")
+print(f"Maximum marks: {max(scores)}")
+
+count = 0;
+for score in scores:
+    if score > 35:
+        count+=1
+print(f"Number of students passed are : {count}")
+        

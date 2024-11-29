@@ -1,0 +1,17 @@
+#import cs
+
+file = open('data.csv' , 'r')
+names =[]
+ages = []
+grades =[]
+#reader = csv.reader(file)
+for data in file:
+    name,age,grade = data.split(",")
+    names.append(name)
+    ages.append(int(age))
+    grades.append(float(grade))
+
+print(f"Number of students :{len(names)}")
+print(f"Average age : {sum(ages)/len(ages)}")
+print(f"Oldest student :{max(ages)}")
+print(f"Smallest student : {min(ages)}")
